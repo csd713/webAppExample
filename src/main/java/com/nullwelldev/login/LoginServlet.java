@@ -1,4 +1,4 @@
-package com.nullwelldev.jee;
+package com.nullwelldev.login;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/login.do")
 public class LoginServlet extends HttpServlet {
 
-	UserValidationService service = new UserValidationService();
+	LoginService service = new LoginService();
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
